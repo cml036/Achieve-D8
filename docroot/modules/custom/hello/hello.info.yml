@@ -1,0 +1,5 @@
+name: Hello
+type: module
+description: 'A module displaying a simple "Hello World" message.'
+package: Custom
+core: 8.x

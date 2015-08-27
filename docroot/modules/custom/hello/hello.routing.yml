@@ -1,0 +1,15 @@
+hello.hello_page:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\hello\Controller\HelloController::helloPage'
+    _title: 'Displays Hello World Message.'
+  requirements:
+    _permission: 'access content'
+
+hello.hello_form:
+  path: '/hello/form'
+  defaults:
+    _form: '\Drupal\hello\Form\HelloForm'
+    _title: 'Provides a simple form submission'
+  requirements:
+    _permission: 'access content'
