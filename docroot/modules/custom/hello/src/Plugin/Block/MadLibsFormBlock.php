@@ -2,6 +2,7 @@
 namespace Drupal\hello\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Form\FormBuilderInterface;
 use Drupal\Core\Form\FormStateInterface;
 
@@ -35,6 +36,13 @@ class MadLibsFormBlock extends BlockBase {
 
     return $form;
   }
+
+  /**
+   * {@inheritdoc}
+   */
+//  public function blockAccess(AccountInterface $account) {
+//    return $account->hasPermission('access content');
+//  }
 
 //  /**
 //   * {@inheritdoc}
