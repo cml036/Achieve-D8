@@ -1,0 +1,5 @@
+hello.hello_form:
+  title: 'Mad Libs Form'
+  description: 'Access the Mab Libs Form submission.'
+  route_name: hello.hello_form
+  menu_name: main
