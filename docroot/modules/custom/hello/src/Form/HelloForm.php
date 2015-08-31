@@ -28,6 +28,8 @@ class HelloForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     dpm($form_state, '$form_state @ submitForm');
     drupal_set_message(t('Your message is @message', array('@message' => $form_state->getValues()['message'])));
+    //    $this->setConfigurationValue('fax_block_settings', $form_state->getValue('fax_block_settings'));
+
   }
 
 }
