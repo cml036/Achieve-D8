@@ -10,4 +10,15 @@ hello.hello_form:
   description: 'Access the Mab Libs Form submission.'
   route_name: hello.hello_form
   menu_name: main
-  weight: 200
+  weight: 200# Hello entity menu items definition
+entity.hello_entity.collection:
+  title: 'Hello entity list'
+  route_name: entity.hello_entity.collection
+  description: 'List Hello entity entities'
+
+hello_entity.admin.structure.settings:
+  title: Hello entity settings
+  description: 'Configure Hello entity entities'
+  route_name: hello_entity.settings
+  parent: system.admin_structure
+

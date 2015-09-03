@@ -284,7 +284,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'tH6UQ_3iuFLf7ozpK9IBoMdNjqLzp48lqXkyyZu6OxyKpPAuY3OagF4amApAd3eBIciwGZAWrg';
 
 /**
  * Deployment identifier.
@@ -700,3 +700,16 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/achieved8/achieved8-settings.inc');
 }
+$databases['default']['default'] = array (
+  'database' => 'cml036d8',
+  'username' => 'root',
+  'password' => 'T00tsie',
+  'prefix' => 'achieve_',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['active'] = 'sites/default/files/config_DsWdOe5P8ZcF_2YWYb8WNvntgzhiwMUgCfH_SWSuleO7AZBTO3j7mijoPT0OQc99Lv8vhYdyxA/active';
+$config_directories['staging'] = 'sites/default/files/config_DsWdOe5P8ZcF_2YWYb8WNvntgzhiwMUgCfH_SWSuleO7AZBTO3j7mijoPT0OQc99Lv8vhYdyxA/staging';

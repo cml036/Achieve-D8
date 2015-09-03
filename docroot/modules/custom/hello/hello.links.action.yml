@@ -1,0 +1,7 @@
+entity.hello_entity.add_form:
+  route_name: entity.hello_entity.add_form
+  title: 'Add Hello entity'
+  appears_on:
+    - entity.hello_entity.collection
+    - entity.hello_entity.canonical
+

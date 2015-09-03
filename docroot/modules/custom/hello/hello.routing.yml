@@ -9,7 +9,57 @@ hello.hello_page:
 hello.hello_form:
   path: '/hello/form'
   defaults:
-    _form: '\Drupal\hello\Form\HelloForm'
+    _form: '\Drupal\hello\Form\HelloFormBase'
     _title: 'Mad Libs Form'
   requirements:
     _permission: 'access content'
+
+# HelloEntity routing definition
+entity.hello_entity.canonical:
+  path: '/admin/hello_entity/{hello_entity}'
+  defaults:
+    _entity_view: 'hello_entity'
+    _title: 'Hello entity'
+  requirements:
+    _entity_access: 'hello_entity.view'
+
+entity.hello_entity.collection:
+  path: '/admin/hello_entity'
+  defaults:
+    _entity_list: 'hello_entity'
+    _title: 'Hello entity list'
+  requirements:
+    _permission: 'view hello entity entities'
+
+entity.hello_entity.add_form:
+  path: '/admin/hello_entity/add'
+  defaults:
+    _entity_form: hello_entity.add
+    _title: 'Add Hello entity'
+  requirements:
+    _permission: 'add hello entity entities'
+
+entity.hello_entity.edit_form:
+  path: '/admin/hello_entity/{hello_entity}/edit'
+  defaults:
+    _entity_form: hello_entity.edit
+    _title: 'Edit Hello entity'
+  requirements:
+    _permission: 'edit hello entity entities'
+
+entity.hello_entity.delete_form:
+  path: '/admin/hello_entity/{hello_entity}/delete'
+  defaults:
+    _entity_form: hello_entity.delete
+    _title: 'Delete Hello entity'
+  requirements:
+    _permission: 'delete hello entity entities'
+
+hello_entity.settings:
+  path: 'admin/structure/hello_entity'
+  defaults:
+   _form: '\Drupal\hello\Entity\Form\HelloEntitySettingsForm'
+   _title: 'Hello entity settings'
+  requirements:
+    _permission: 'administer hello entity entities'
+

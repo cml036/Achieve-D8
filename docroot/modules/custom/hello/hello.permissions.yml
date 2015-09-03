@@ -1,0 +1,15 @@
+add hello entity entities:
+  title: 'Create new Hello entity entities'
+
+administer hello entity entities:
+  title: 'Administer Hello entity entities'
+  description: 'Allow to access the administration form to configure Hello entity entities.'
+
+delete hello entity entities:
+  title: 'Delete Hello entity entities'
+
+edit hello entity entities:
+  title: 'Edit Hello entity entities'
+
+view hello entity entities:
+  title: 'View Hello entity entities'

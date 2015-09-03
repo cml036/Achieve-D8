@@ -18,7 +18,7 @@ class MadLibsFormBlock extends BlockBase {
 
   public function build() {
     // Returns the HelloForm form.
-    $form =  \Drupal::formBuilder()->getForm('Drupal\hello\Form\HelloForm');
+    $form =  \Drupal::formBuilder()->getForm('Drupal\hello\Form\HelloFormBase');
     return $form;
   }
 
